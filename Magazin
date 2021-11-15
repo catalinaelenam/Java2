@@ -1,0 +1,46 @@
+package composition;
+
+public class Magazin {
+
+        private String nume;
+        private int suprafata;
+        private int nrAngajati;
+        private Branza[] produseBranza;
+
+        public void setNume ( String numeMagazin){
+            if (numeMagazin.isEmpty()) {
+                System.out.println("Nu ati introdus niciun nume");
+            } else {
+                nume = numeMagazin;
+            }
+        }
+
+        public String getNume () {
+            return nume;
+        }
+
+        public Branza[] getProduseBranza () {
+            return produseBranza;
+        }
+
+        public void setProduseBranza (Branza[]produseBranza){
+            this.produseBranza = produseBranza;
+        }
+
+        public int getSuprafata () {
+            return suprafata;
+        }
+
+        public void setSuprafata ( int suprafata){
+            this.suprafata = suprafata;
+        }
+
+        public int getNrAngajati () {
+            return nrAngajati;
+        }
+
+        public void setNrAngajati ( int nrAngajati){
+            this.nrAngajati = nrAngajati;
+        }
+
+}
