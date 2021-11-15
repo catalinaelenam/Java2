@@ -1,0 +1,50 @@
+package composition;
+
+public class Branza {
+    private int gramaj;
+    private String tipBranza;
+    private String forma = "patrata";
+    private int pret;
+    private String valoriNutritionale;
+
+    public String getForma() {
+        return forma;
+    }
+
+    public void setForma(String forma) {
+        this.forma = forma;
+    }
+
+    public int getGramaj() {
+        return gramaj;
+    }
+
+    public void setGramaj(int gramajObiect) {
+        gramaj = gramajObiect;
+    }
+
+    public String getTipBranza() {
+        return tipBranza;
+    }
+
+    public void setTipBranza(String tipBranza) {
+        this.tipBranza = tipBranza;
+    }
+
+    public int getPret() {
+        return pret;
+    }
+
+    public void setPret(int pret) {
+        this.pret = pret;
+    }
+
+    public String getValoriNutritionale() {
+        return valoriNutritionale;
+    }
+
+    public void setValoriNutritionale(String valoriNutritionale) {
+        this.valoriNutritionale = valoriNutritionale;
+    }
+
+}
