@@ -1,0 +1,54 @@
+package composition;
+
+public class MainComposition {
+
+    public static void main(String[] args) {
+
+        composition.Magazin magazinulMeu = new composition.Magazin();
+        magazinulMeu.setNume("Lumea branzeturilor");
+        magazinulMeu.setSuprafata(200);
+
+        composition.Branza branzavaca1 = new composition.Branza();
+        branzavaca1.setTipBranza("Branza de vaca");
+        branzavaca1.setGramaj(1000);
+
+        composition.Branza branzavaca2 = new composition.Branza();
+        branzavaca2.setTipBranza("Branza de vaca");
+        branzavaca2.setGramaj(1000);
+
+        composition.Branza branzamucegai = new composition.Branza();
+        branzamucegai.setTipBranza("Branza cu mucegai");
+        branzamucegai.setGramaj(500);
+
+        composition.Branza[] listaBranzeturi = new composition.Branza[3];
+        listaBranzeturi[0] = branzavaca1;
+        listaBranzeturi[1] = branzavaca2;
+        listaBranzeturi[2] = branzamucegai;
+
+
+        magazinulMeu.setProduseBranza(listaBranzeturi);
+
+
+        //afisare
+
+        for (composition.Branza branza: magazinulMeu.getProduseBranza()) {
+            System.out.println(branza.getTipBranza());
+        }
+
+        Magazin magazin2 = new Magazin();
+        magazin2.setNume("Al doilea magazin Lumea branzeturilor");
+
+
+        composition.Branza vaca = new composition.Branza();
+        vaca.setGramaj(500);
+        vaca.setTipBranza("cas proaspat");
+        vaca.setForma("rotunda");
+
+        composition.Branza vaca2 = new composition.Branza();
+        vaca2.setGramaj(500);
+        vaca2.setTipBranza("cascaval");
+        vaca2.setForma("triunghi");
+
+    }
+    
+}
